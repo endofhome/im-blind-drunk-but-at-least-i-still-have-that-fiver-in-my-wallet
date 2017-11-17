@@ -6,11 +6,14 @@ It's not big or clever, it's a screen scraping script to find cheap spirits in t
 
 `cURL`
 
+`Headless Chrome` (available in Chrome 59+)
+
 ## Usage
 
 _macOs/Linux_
 * clone this repo
 * ensure that you have `curl` and `node` available on your system. Mac users, you can install them both with `homebrew` - hit up a search engine if this is new to you. Linux users, you can probably handle this.
+* you need Chrome version 59 or later on your system.
 * install the node dependencies by navigating to this directory in your terminal and typing `npm install`.
 * to run the script from your terminal, navigate to this directory and type `./cheapbooze.sh <name-of-spirit-to-search-for>`, ie. `./cheapbooze Laphroaig`
 * if the file will not execute, you may need to set permissions: `chmod +x cheapbooze.sh` should do it.
