@@ -1,5 +1,5 @@
 # im-blind-drunk-but-at-least-i-still-have-that-fiver-in-my-wallet
-It's not big or clever, it's a screen scraping script to find cheap spirits in the UK (currently from Sainsburys and Tesco)
+It's not big or clever, it's a _clunky_ screen scraping script to find cheap spirits in the UK (currently from Sainsburys and Tesco). Probably only works for Laphroaig, since that's what I use it for.
 
 ## Requirements
 `node.js`
