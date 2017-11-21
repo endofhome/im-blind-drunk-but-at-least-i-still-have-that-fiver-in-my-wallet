@@ -38,7 +38,7 @@ done
 TESCO=$(grep ${PRODUCT} tesco.html)
 TESCO_OFFER=$(awk '/'${PRODUCT}'/ {
     match($0, /'${PRODUCT}'/); print substr($0, RSTART - 0, RLENGTH + 1000);
-}' tesco.html | grep -v "&quot;,&quot;facetName&quot;:&quot;.*&quot;,&quot;binCount&quot;:1,&quot;isSelected&quot;:false},{&quot;facetId&quot;:&quot;.*&quot;," | sed 's/.*Save/Save/' | sed 's/<.*//')
+}' tesco.html | grep -v "&quot;,&quot;facetName&quot;:&quot;.*&quot;,&quot;binCount&quot;:.*,&quot;isSelected&quot;:false},{&quot;facetId&quot;:&quot;.*&quot;," | sed 's/.*Save/Save/' | sed 's/<.*//')
 
 if [[ -n "$TESCO"  ]]; then
   printf "${GREEN}On sale at Tesco! ${TESCO_OFFER}${RESET}"
